@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum Status {
+    case red, yellow, green
+}
+
 class Plant {
     
     // MARK: - Properties
@@ -20,17 +24,20 @@ class Plant {
     let maxTemperature: Double
     let minHumidity: Double
     let maxHumidity: Double
+    let status: Status
     let waterLog: [Date]
     let compostLog: [Date]
     
     init(boughtAt: Date,
          scientificName: String,
+         commonName: String,
          nickname: String,
          description: String,
          minTemperature: Double,
          maxTemperature: Double,
          minHumidity: Double,
-         maxHumidity: Double) {
+         maxHumidity: Double,
+         status: Status) {
         
         self.boughtAt = boughtAt
         self.scientificName = scientificName
@@ -41,6 +48,7 @@ class Plant {
         self.maxTemperature = maxTemperature
         self.minHumidity = minHumidity
         self.maxHumidity = maxHumidity
+        self.status = status
         self.waterLog = []
         self.compostLog = []
     }
