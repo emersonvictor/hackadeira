@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		D9223E7A2377172B00601FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E792377172B00601FCD /* AppDelegate.swift */; };
 		D9223E7C2377172B00601FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E7B2377172B00601FCD /* SceneDelegate.swift */; };
-		D9223E7E2377172B00601FCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E7D2377172B00601FCD /* ViewController.swift */; };
+		D9223E7E2377172B00601FCD /* PlantsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E7D2377172B00601FCD /* PlantsController.swift */; };
 		D9223E812377172B00601FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9223E7F2377172B00601FCD /* Main.storyboard */; };
 		D9223E832377172E00601FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9223E822377172E00601FCD /* Assets.xcassets */; };
 		D9223E862377172E00601FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9223E842377172E00601FCD /* LaunchScreen.storyboard */; };
+		D9223E98237727FB00601FCD /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E97237727FB00601FCD /* Plant.swift */; };
+		D9223E9C23772FA400601FCD /* PotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E9B23772FA400601FCD /* PotManager.swift */; };
+		D9223E9E23773A7000601FCD /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E9D23773A7000601FCD /* MockData.swift */; };
+		D9223EA023773CD200601FCD /* PlantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E9F23773CD200601FCD /* PlantController.swift */; };
+		D9223EA423773D3E00601FCD /* PlantCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223EA323773D3E00601FCD /* PlantCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9223E762377172B00601FCD /* Hackadeira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackadeira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9223E792377172B00601FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9223E7B2377172B00601FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9223E7D2377172B00601FCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9223E7D2377172B00601FCD /* PlantsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsController.swift; sourceTree = "<group>"; };
 		D9223E802377172B00601FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9223E822377172E00601FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9223E852377172E00601FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9223E872377172E00601FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9223E97237727FB00601FCD /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		D9223E9B23772FA400601FCD /* PotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotManager.swift; sourceTree = "<group>"; };
+		D9223E9D23773A7000601FCD /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		D9223E9F23773CD200601FCD /* PlantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantController.swift; sourceTree = "<group>"; };
+		D9223EA323773D3E00601FCD /* PlantCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 				D9223E8D2377174600601FCD /* Application */,
 				D9223E8E2377174D00601FCD /* Controllers */,
 				D9223E8F2377175200601FCD /* Interface */,
+				D9223E9423771AC200601FCD /* Data */,
 			);
 			path = Hackadeira;
 			sourceTree = "<group>";
@@ -77,7 +88,9 @@
 		D9223E8E2377174D00601FCD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D9223E7D2377172B00601FCD /* ViewController.swift */,
+				D9223E9F23773CD200601FCD /* PlantController.swift */,
+				D9223E7D2377172B00601FCD /* PlantsController.swift */,
+				D9223EA323773D3E00601FCD /* PlantCardCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -89,6 +102,16 @@
 				D9223E7F2377172B00601FCD /* Main.storyboard */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		D9223E9423771AC200601FCD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D9223E9D23773A7000601FCD /* MockData.swift */,
+				D9223E97237727FB00601FCD /* Plant.swift */,
+				D9223E9B23772FA400601FCD /* PotManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9223E7E2377172B00601FCD /* ViewController.swift in Sources */,
+				D9223E7E2377172B00601FCD /* PlantsController.swift in Sources */,
+				D9223E9E23773A7000601FCD /* MockData.swift in Sources */,
+				D9223E98237727FB00601FCD /* Plant.swift in Sources */,
 				D9223E7A2377172B00601FCD /* AppDelegate.swift in Sources */,
+				D9223EA023773CD200601FCD /* PlantController.swift in Sources */,
+				D9223E9C23772FA400601FCD /* PotManager.swift in Sources */,
 				D9223E7C2377172B00601FCD /* SceneDelegate.swift in Sources */,
+				D9223EA423773D3E00601FCD /* PlantCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

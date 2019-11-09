@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlantsController.swift
 //  hackadeira
 //
 //  Created by Emerson Victor on 09/11/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlantsController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
