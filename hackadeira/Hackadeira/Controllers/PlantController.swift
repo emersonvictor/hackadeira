@@ -71,7 +71,7 @@ class PlantController: UIViewController {
         }
         
         self.socket.on("temp") {[weak self] data, ack in
-            
+            self?.airTemperature.text = data[0] as? String
             return
         }
     }
