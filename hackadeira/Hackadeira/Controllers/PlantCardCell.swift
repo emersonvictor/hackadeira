@@ -20,11 +20,22 @@ class PlantCardCell: UICollectionViewCell {
         didSet {
             switch self.status {
             case .green:
-                print("green")
+                for imageView in self.leafs {
+                    imageView.image = UIImage(named: "green-leaf")
+                }
             case .yellow:
-                print("yellow")
+                for imageView in self.leafs {
+                    imageView.image = UIImage(named: "gray-leaf")
+                }
+                
+                self.leafs[1].image = UIImage(named: "yellow-leaf")
+                self.leafs[0].image = UIImage(named: "yellow-leaf")
             case .red:
-                print("red")
+                for imageView in self.leafs {
+                    imageView.image = UIImage(named: "gray-leaf")
+                }
+                
+                self.leafs[1].image = UIImage(named: "red-leaf")
             case .none:
                 print("none")
             }

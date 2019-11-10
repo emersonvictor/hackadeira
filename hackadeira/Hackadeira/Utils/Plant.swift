@@ -15,6 +15,7 @@ enum Status {
 class Plant {
     
     // MARK: - Properties
+    let imageNamed: String
     let boughtAt: Date
     let scientificName: String
     let commonName: String
@@ -33,7 +34,8 @@ class Plant {
     let luminosity: String
     let isCovered: Bool
     
-    init(boughtAt: Date,
+    init(imageNamed: String,
+         boughtAt: Date,
          scientificName: String,
          commonName: String,
          nickname: String,
@@ -44,6 +46,7 @@ class Plant {
          maxHumidity: Double,
          status: Status) {
         
+        self.imageNamed = imageNamed
         self.boughtAt = boughtAt
         self.scientificName = scientificName
         self.commonName = commonName
@@ -54,8 +57,8 @@ class Plant {
         self.minHumidity = minHumidity
         self.maxHumidity = maxHumidity
         self.status = status
-        self.waterLog = []
-        self.compostLog = []
+        self.waterLog = [Date()]
+        self.compostLog = [Date()]
         self.airHumidity = 0
         self.airTemperature = 0
         self.soilHumidity = 0
