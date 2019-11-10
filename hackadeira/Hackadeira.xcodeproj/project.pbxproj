@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,7 +26,7 @@
 		30126DF1076ADC2307B8CEB8 /* Pods_Hackadeira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackadeira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832A4F036C0AD3FFFA574DFC /* Pods-Hackadeira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackadeira.release.xcconfig"; path = "Target Support Files/Pods-Hackadeira/Pods-Hackadeira.release.xcconfig"; sourceTree = "<group>"; };
 		C85149EEB9B064374EF4584E /* Pods-Hackadeira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackadeira.debug.xcconfig"; path = "Target Support Files/Pods-Hackadeira/Pods-Hackadeira.debug.xcconfig"; sourceTree = "<group>"; };
-		D9223E762377172B00601FCD /* Hackadeira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackadeira.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9223E762377172B00601FCD /* Flora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9223E792377172B00601FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9223E7B2377172B00601FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D9223E7D2377172B00601FCD /* PlantsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		D9223E772377172B00601FCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9223E762377172B00601FCD /* Hackadeira.app */,
+				D9223E762377172B00601FCD /* Flora.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +138,6 @@
 				C85149EEB9B064374EF4584E /* Pods-Hackadeira.debug.xcconfig */,
 				832A4F036C0AD3FFFA574DFC /* Pods-Hackadeira.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +160,7 @@
 			);
 			name = Hackadeira;
 			productName = hackadeira;
-			productReference = D9223E762377172B00601FCD /* Hackadeira.app */;
+			productReference = D9223E762377172B00601FCD /* Flora.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -419,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iot.hackadeira;
-				PRODUCT_NAME = Hackadeira;
+				PRODUCT_NAME = Flora;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -439,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iot.hackadeira;
-				PRODUCT_NAME = Hackadeira;
+				PRODUCT_NAME = Flora;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
