@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19F41BAB9EC07927E9984315 /* Pods_Hackadeira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30126DF1076ADC2307B8CEB8 /* Pods_Hackadeira.framework */; };
 		D9223E7A2377172B00601FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E792377172B00601FCD /* AppDelegate.swift */; };
 		D9223E7C2377172B00601FCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E7B2377172B00601FCD /* SceneDelegate.swift */; };
 		D9223E7E2377172B00601FCD /* PlantsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E7D2377172B00601FCD /* PlantsController.swift */; };
@@ -18,9 +19,13 @@
 		D9223EA023773CD200601FCD /* PlantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223E9F23773CD200601FCD /* PlantController.swift */; };
 		D9223EA7237753CA00601FCD /* PlantCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9223EA5237753CA00601FCD /* PlantCardCell.swift */; };
 		D9223EA8237753CA00601FCD /* PlantCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9223EA6237753CA00601FCD /* PlantCardCell.xib */; };
+		D9B1A54423784FC30001CE3F /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B1A54323784FC30001CE3F /* URLSessionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30126DF1076ADC2307B8CEB8 /* Pods_Hackadeira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackadeira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832A4F036C0AD3FFFA574DFC /* Pods-Hackadeira.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackadeira.release.xcconfig"; path = "Target Support Files/Pods-Hackadeira/Pods-Hackadeira.release.xcconfig"; sourceTree = "<group>"; };
+		C85149EEB9B064374EF4584E /* Pods-Hackadeira.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackadeira.debug.xcconfig"; path = "Target Support Files/Pods-Hackadeira/Pods-Hackadeira.debug.xcconfig"; sourceTree = "<group>"; };
 		D9223E762377172B00601FCD /* Hackadeira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackadeira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9223E792377172B00601FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9223E7B2377172B00601FCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		D9223E9F23773CD200601FCD /* PlantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantController.swift; sourceTree = "<group>"; };
 		D9223EA5237753CA00601FCD /* PlantCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardCell.swift; sourceTree = "<group>"; };
 		D9223EA6237753CA00601FCD /* PlantCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantCardCell.xib; sourceTree = "<group>"; };
+		D9B1A54323784FC30001CE3F /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F41BAB9EC07927E9984315 /* Pods_Hackadeira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9899FFD32B6107FE2556D454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30126DF1076ADC2307B8CEB8 /* Pods_Hackadeira.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9223E6D2377172A00601FCD = {
 			isa = PBXGroup;
 			children = (
 				D9223E782377172B00601FCD /* Hackadeira */,
 				D9223E772377172B00601FCD /* Products */,
+				F88B09E58E9E6FE1B82FD26F /* Pods */,
+				9899FFD32B6107FE2556D454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +127,19 @@
 			children = (
 				D9223E9D23773A7000601FCD /* MockData.swift */,
 				D9223E97237727FB00601FCD /* Plant.swift */,
+				D9B1A54323784FC30001CE3F /* URLSessionExtension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F88B09E58E9E6FE1B82FD26F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85149EEB9B064374EF4584E /* Pods-Hackadeira.debug.xcconfig */,
+				832A4F036C0AD3FFFA574DFC /* Pods-Hackadeira.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9223E8A2377172E00601FCD /* Build configuration list for PBXNativeTarget "Hackadeira" */;
 			buildPhases = (
+				28D224E09024C649C742E34A /* [CP] Check Pods Manifest.lock */,
 				D9223E722377172B00601FCD /* Sources */,
 				D9223E732377172B00601FCD /* Frameworks */,
 				D9223E742377172B00601FCD /* Resources */,
+				3BB3CB2E9997ED33858CCD10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,11 +211,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28D224E09024C649C742E34A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackadeira-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB3CB2E9997ED33858CCD10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackadeira/Pods-Hackadeira-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackadeira/Pods-Hackadeira-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackadeira/Pods-Hackadeira-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9223E722377172B00601FCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B1A54423784FC30001CE3F /* URLSessionExtension.swift in Sources */,
 				D9223E7E2377172B00601FCD /* PlantsController.swift in Sources */,
 				D9223E9E23773A7000601FCD /* MockData.swift in Sources */,
 				D9223E98237727FB00601FCD /* Plant.swift in Sources */,
@@ -334,6 +407,7 @@
 		};
 		D9223E8B2377172E00601FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85149EEB9B064374EF4584E /* Pods-Hackadeira.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +427,7 @@
 		};
 		D9223E8C2377172E00601FCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832A4F036C0AD3FFFA574DFC /* Pods-Hackadeira.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

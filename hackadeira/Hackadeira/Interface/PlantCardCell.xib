@@ -24,12 +24,17 @@
                             <constraint firstAttribute="height" constant="200" id="fMs-5o-nhA"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5AF-h8-lth">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5AF-h8-lth">
                         <rect key="frame" x="50" y="20" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="VYD-ej-c12"/>
                             <constraint firstAttribute="height" constant="60" id="hQq-XD-94z"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apelido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDt-z4-90c">
                         <rect key="frame" x="0.0" y="88" width="160" height="22"/>
@@ -49,27 +54,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-zV-z83">
-                        <rect key="frame" x="10" y="147" width="140" height="22"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-zV-z83">
+                        <rect key="frame" x="25" y="147" width="110" height="18"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sj-7y-UrF">
-                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="22"/>
+                                <rect key="frame" x="0.0" y="0.0" width="19.5" height="18"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eS5-q3-Lr1">
-                                <rect key="frame" x="29.5" y="0.0" width="21.5" height="22"/>
+                                <rect key="frame" x="22.5" y="0.0" width="19.5" height="18"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hLd-TI-yWo">
-                                <rect key="frame" x="59" y="0.0" width="22" height="22"/>
+                                <rect key="frame" x="45" y="0.0" width="20" height="18"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vMz-FW-6Te">
-                                <rect key="frame" x="89" y="0.0" width="21.5" height="22"/>
+                                <rect key="frame" x="68" y="0.0" width="19.5" height="18"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3W-28-NK3">
-                                <rect key="frame" x="118.5" y="0.0" width="21.5" height="22"/>
+                                <rect key="frame" x="90.5" y="0.0" width="19.5" height="18"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="ust-5n-95L"/>
+                            <constraint firstAttribute="height" constant="18" id="ust-5n-95L"/>
                         </constraints>
                     </stackView>
                 </subviews>
@@ -79,12 +84,12 @@
                 <constraint firstAttribute="trailing" secondItem="hq5-Rt-Jcr" secondAttribute="trailing" id="95g-vF-n7T"/>
                 <constraint firstItem="hq5-Rt-Jcr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A95-lL-leF"/>
                 <constraint firstItem="vDt-z4-90c" firstAttribute="top" secondItem="5AF-h8-lth" secondAttribute="bottom" constant="8" id="Dqi-hF-BQZ"/>
-                <constraint firstItem="U0A-zV-z83" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FaY-dA-zjv"/>
+                <constraint firstItem="U0A-zV-z83" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="FaY-dA-zjv"/>
                 <constraint firstItem="5AF-h8-lth" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="I8P-pY-E1J"/>
                 <constraint firstItem="5AF-h8-lth" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="INS-F2-IXM"/>
                 <constraint firstItem="vDt-z4-90c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Sob-Pf-9XC"/>
                 <constraint firstItem="U0A-zV-z83" firstAttribute="top" secondItem="H8D-7X-8a3" secondAttribute="bottom" constant="15" id="UQe-mk-H62"/>
-                <constraint firstAttribute="trailing" secondItem="U0A-zV-z83" secondAttribute="trailing" constant="10" id="h0E-sp-gYc"/>
+                <constraint firstAttribute="trailing" secondItem="U0A-zV-z83" secondAttribute="trailing" constant="25" id="h0E-sp-gYc"/>
                 <constraint firstItem="H8D-7X-8a3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lkg-qU-uPi"/>
                 <constraint firstAttribute="trailing" secondItem="H8D-7X-8a3" secondAttribute="trailing" id="nx9-bn-pMr"/>
                 <constraint firstAttribute="trailing" secondItem="vDt-z4-90c" secondAttribute="trailing" id="oUL-qs-Wce"/>
@@ -99,6 +104,10 @@
                 <outlet property="image" destination="5AF-h8-lth" id="Lcw-2g-ET4"/>
                 <outlet property="nickname" destination="vDt-z4-90c" id="kDf-yD-GtU"/>
                 <outletCollection property="leafs" destination="eS5-q3-Lr1" collectionClass="NSMutableArray" id="r8M-gi-Bsb"/>
+                <outletCollection property="leafs" destination="8sj-7y-UrF" collectionClass="NSMutableArray" id="xYD-za-xhN"/>
+                <outletCollection property="leafs" destination="hLd-TI-yWo" collectionClass="NSMutableArray" id="kU9-5p-c00"/>
+                <outletCollection property="leafs" destination="vMz-FW-6Te" collectionClass="NSMutableArray" id="wfn-pN-FaI"/>
+                <outletCollection property="leafs" destination="P3W-28-NK3" collectionClass="NSMutableArray" id="vWI-HQ-Tpi"/>
             </connections>
             <point key="canvasLocation" x="179.71014492753625" y="162.72321428571428"/>
         </collectionViewCell>

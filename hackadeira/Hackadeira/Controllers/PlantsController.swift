@@ -34,7 +34,6 @@ class PlantsController: UIViewController {
 
 extension PlantsController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        print(searchController.searchBar.text)
     }
 }
 
@@ -51,6 +50,7 @@ extension PlantsController: UICollectionViewDataSource, UICollectionViewDelegate
         cell.commonName.text = plant.commonName
         cell.nickname.text = plant.nickname
         cell.status = plant.status
+        cell.image.image = UIImage(named: plant.imageNamed)
         cell.contentView.layer.cornerRadius = 15
         cell.contentView.layer.masksToBounds = true
         cell.layer.masksToBounds = false

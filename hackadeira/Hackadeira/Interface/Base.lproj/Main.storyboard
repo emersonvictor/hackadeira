@@ -67,12 +67,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dqi-bU-qAy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papoula" translatesAutoresizingMaskIntoConstraints="NO" id="Dqi-bU-qAy">
                                 <rect key="frame" x="147" y="60" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Kjp-Qw-mIj"/>
                                     <constraint firstAttribute="width" constant="120" id="vZW-lq-NuN"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5JB-L1-hg5">
                                 <rect key="frame" x="65" y="220" width="349" height="417"/>
@@ -215,14 +220,26 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7D-Du-S4C">
+                                <rect key="frame" x="57" y="657" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="kLk-J0-ebN"/>
+                                </constraints>
+                                <state key="normal" title="COBRIR PLANTA"/>
+                                <connections>
+                                    <action selector="coverPlant" destination="3fK-of-7VQ" eventType="touchUpInside" id="Dda-jP-gjc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zq0-4f-zYZ" firstAttribute="trailing" secondItem="5JB-L1-hg5" secondAttribute="trailing" id="4Bb-Wx-oyG"/>
                             <constraint firstItem="5JB-L1-hg5" firstAttribute="leading" secondItem="zq0-4f-zYZ" secondAttribute="leading" constant="65" id="AwU-M9-ecO"/>
+                            <constraint firstItem="i7D-Du-S4C" firstAttribute="centerX" secondItem="KYi-zl-IzN" secondAttribute="centerX" id="M98-fu-mHQ"/>
                             <constraint firstItem="Dqi-bU-qAy" firstAttribute="top" secondItem="zq0-4f-zYZ" secondAttribute="top" constant="60" id="bPv-sl-mOP"/>
                             <constraint firstItem="5JB-L1-hg5" firstAttribute="top" secondItem="Dqi-bU-qAy" secondAttribute="bottom" constant="40" id="eVV-uJ-UnI"/>
                             <constraint firstItem="Dqi-bU-qAy" firstAttribute="centerX" secondItem="KYi-zl-IzN" secondAttribute="centerX" id="h6S-iI-sRw"/>
+                            <constraint firstItem="i7D-Du-S4C" firstAttribute="top" secondItem="5JB-L1-hg5" secondAttribute="bottom" constant="20" id="jRY-7Y-QhQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zq0-4f-zYZ"/>
                     </view>
@@ -241,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWQ-jW-iZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="127"/>
+            <point key="canvasLocation" x="1921.7391304347827" y="126.5625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="53z-LZ-5qF">
@@ -266,4 +283,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="papoula" width="402" height="396"/>
+    </resources>
 </document>

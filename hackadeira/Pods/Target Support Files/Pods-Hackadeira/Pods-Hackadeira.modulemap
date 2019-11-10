@@ -1,0 +1,6 @@
+framework module Pods_Hackadeira {
+  umbrella header "Pods-Hackadeira-umbrella.h"
+
+  export *
+  module * { export * }
+}
