@@ -27,6 +27,11 @@ class Plant {
     let status: Status
     let waterLog: [Date]
     let compostLog: [Date]
+    let airHumidity: Double
+    let airTemperature: Double
+    let soilHumidity: Double
+    let luminosity: String
+    let isCovered: Bool
     
     init(boughtAt: Date,
          scientificName: String,
@@ -51,5 +56,10 @@ class Plant {
         self.status = status
         self.waterLog = []
         self.compostLog = []
+        self.airHumidity = 0
+        self.airTemperature = 0
+        self.soilHumidity = 0
+        self.luminosity = "Claro"
+        self.isCovered = false
     }
 }
