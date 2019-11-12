@@ -14,7 +14,6 @@ class PlantController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var nickname: UILabel!
     @IBOutlet weak var commonName: UILabel!
-    @IBOutlet weak var scientificName: UILabel!
     @IBOutlet weak var lastWater: UILabel!
     @IBOutlet weak var soilHumidity: UILabel!
     @IBOutlet weak var airHumidity: UILabel!
@@ -35,7 +34,7 @@ class PlantController: UIViewController {
         let plant = MockData.plants[0]
         self.nickname.text = plant.nickname
         self.commonName.text = plant.commonName
-        self.scientificName.text = plant.scientificName
+//        self.scientificName.text = plant.scientificName
         self.lastWater.text = "\(plant.waterLog.last!)"
         self.soilHumidity.text = String(plant.soilHumidity)
         self.airHumidity.text = "\(plant.airHumidity)"
@@ -51,7 +50,7 @@ class PlantController: UIViewController {
         task.resume()
         
         // Stop repeated movement
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (_) in
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { (_) in
             let coverLink = URL(string: "http://10.0.202.11:1880/move/0")
             let task = URLSession.shared.dataTask(with: coverLink!) { (_) in }
             
